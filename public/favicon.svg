@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="apexFavA" x1="15%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stopColor="#FDE68A" />
+      <stop offset="40%" stopColor="#F59E0B" />
+      <stop offset="80%" stopColor="#D97706" />
+      <stop offset="100%" stopColor="#92400E" />
+    </linearGradient>
+    <linearGradient id="apexFavOrbit" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stopColor="#FDE68A" />
+      <stop offset="50%" stopColor="#FBBF24" />
+      <stop offset="100%" stopColor="#F59E0B" />
+    </linearGradient>
+    <linearGradient id="apexFavStar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#FEF08A" />
+      <stop offset="100%" stopColor="#F59E0B" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background disc for contrast on any tab -->
+  <circle cx="50" cy="50" r="48" fill="#0B0E14" stroke="#D4AF37" stroke-width="2" stroke-opacity="0.3" />
+
+  <!-- 4-Point Star -->
+  <path d="M72 16 C72 19, 75 22, 78 22 C75 22, 72 25, 72 28 C72 25, 69 22, 66 22 C69 22, 72 19, 72 16 Z" fill="url(#apexFavStar)" />
+
+  <!-- Apex 'A' -->
+  <path d="M48 16 C50 12, 54 12, 56 16 L83 75 C85 79, 82 83, 77 83 L66 83 C63 83, 60 81, 58 78 L52 64 L39 64 L33 78 C31 81, 28 83, 25 83 L14 83 C9 83, 6 79, 8 75 L37 16 Z M46 44 L41 54 L50 54 Z" fill="url(#apexFavA)" fill-rule="evenodd" />
+
+  <!-- Swoosh Orbit -->
+  <path d="M28 66 C42 58, 68 46, 86 51 C90 52, 90 57, 85 59 C71 64, 49 71, 31 74 C26 75, 24 70, 28 66 Z" fill="url(#apexFavOrbit)" opacity="0.95" />
+</svg>

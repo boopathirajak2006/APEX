@@ -1,0 +1,121 @@
+import type { LanguageMeta } from '../../src/types'
+
+export const SUPPORTED_LANGUAGES: LanguageMeta[] = [
+  {
+    id: 'python',
+    name: 'Python',
+    tagline: 'Versatile, high-level, and beginner-friendly',
+    icon: '🐍',
+    color: '#38bdf8',
+    accentColor: '#0284c7',
+    description: 'Master clean syntax, OOP, data structures, and foundational AI/data science with Python.',
+    popular: true,
+    totalLessons: 24,
+    totalLevels: 150,
+    badgeTitle: 'Python Master'
+  },
+  {
+    id: 'c',
+    name: 'C',
+    tagline: 'Foundational systems & procedural computing',
+    icon: '🔤',
+    color: '#64748b',
+    accentColor: '#475569',
+    description: 'Understand low-level hardware memory, pointers, structs, and computer architecture roots.',
+    popular: false,
+    totalLessons: 16,
+    totalLevels: 150,
+    badgeTitle: 'C Pioneer'
+  },
+  {
+    id: 'cpp',
+    name: 'C++',
+    tagline: 'Extreme performance, systems & game engines',
+    icon: '⚙️',
+    color: '#f43f5e',
+    accentColor: '#e11d48',
+    description: 'Direct memory control, templates, OOP, competitive programming, and high-throughput systems.',
+    popular: false,
+    totalLessons: 18,
+    totalLevels: 150,
+    badgeTitle: 'System Architect'
+  },
+  {
+    id: 'html',
+    name: 'HTML',
+    tagline: 'The structural foundation of the World Wide Web',
+    icon: '🌐',
+    color: '#f97316',
+    accentColor: '#ea580c',
+    description: 'Build semantic web documents, forms, multimedia embeds, and accessible page hierarchies.',
+    popular: false,
+    totalLessons: 14,
+    totalLevels: 150,
+    badgeTitle: 'Markup Specialist'
+  },
+  {
+    id: 'java',
+    name: 'Java',
+    tagline: 'Robust object-oriented enterprise backbone',
+    icon: '☕',
+    color: '#ea580c',
+    accentColor: '#c2410c',
+    description: 'Object-oriented programming mastery, type safety, JVM architecture, and design patterns.',
+    popular: true,
+    totalLessons: 20,
+    totalLevels: 150,
+    badgeTitle: 'Java Duke'
+  },
+  {
+    id: 'javascript',
+    name: 'JavaScript',
+    tagline: 'Universal interactive language of the modern web',
+    icon: '⚡',
+    color: '#fbbf24',
+    accentColor: '#d97706',
+    description: 'Build dynamic DOM interactions, asynchronous workflows, APIs, and modern web applications.',
+    popular: true,
+    totalLessons: 20,
+    totalLevels: 150,
+    badgeTitle: 'JS Engineer'
+  },
+  {
+    id: 'rust',
+    name: 'Rust',
+    tagline: 'Memory safety without garbage collection',
+    icon: '🦀',
+    color: '#f97316',
+    accentColor: '#c2410c',
+    description: 'Fearless concurrency, ownership & borrowing semantics, and high-performance modern systems.',
+    popular: false,
+    totalLessons: 16,
+    totalLevels: 150,
+    badgeTitle: 'Rustacean'
+  },
+  {
+    id: 'sql',
+    name: 'SQL',
+    tagline: 'Standard query language for relational data',
+    icon: '🗄️',
+    color: '#a855f7',
+    accentColor: '#7e22ce',
+    description: 'Filter, aggregate, join, and structure relational databases and analytical datasets.',
+    popular: false,
+    totalLessons: 16,
+    totalLevels: 150,
+    badgeTitle: 'Query Master'
+  },
+  {
+    id: 'typescript',
+    name: 'TypeScript',
+    tagline: 'Type-safe JavaScript at enterprise scale',
+    icon: '🔷',
+    color: '#60a5fa',
+    accentColor: '#2563eb',
+    description: 'Write maintainable web applications with static typing, interfaces, union types, and generics.',
+    popular: true,
+    totalLessons: 18,
+    totalLevels: 150,
+    badgeTitle: 'TypeScript Sage'
+  }
+]

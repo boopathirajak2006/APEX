@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-deep: #0B0E14;
+    --bg-surface: #121620;
+    --bg-card: #161B26;
+    --bg-card-hover: #1C2333;
+    --bg-card-active: #242D40;
+    
+    --border-subtle: rgba(255, 255, 255, 0.08);
+    --border-card: rgba(255, 255, 255, 0.12);
+    --border-gold: rgba(212, 175, 55, 0.3);
+    --border-gold-glow: rgba(245, 184, 56, 0.5);
+    
+    --accent-gold: #E5B842;
+    --accent-gold-light: #FDE68A;
+    --accent-gold-dark: #B48C28;
+    --accent-amber: #F59E0B;
+    --accent-success: #10B981;
+    --accent-sky: #38BDF8;
+    --accent-rose: #EF4444;
+    
+    --text-primary: #F5F5F7;
+    --text-secondary: #CBD5E1;
+    --text-muted: #9BA1B0;
+    --text-dim: #64748B;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body,
+  button,
+  input,
+  select,
+  textarea,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .font-heading {
+    font-family: "Times New Roman", Times, serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html,
+  body {
+    background-color: #0B0E14;
+    color: #F5F5F7;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    letter-spacing: -0.01em;
+  }
+
+  code, pre, .font-mono, .monaco-editor, .monaco-editor * {
+    font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+  }
+
+  /* Refined APEX dark charcoal & gold scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0B0E14;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1C2333;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D4AF37;
+  }
+}
+
+/* APEX Design 1 Premium Card & Button Utilities */
+.card-apex {
+  background: #121620;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 16px 36px -12px rgba(0, 0, 0, 0.6);
+  border-radius: 1rem;
+}
+
+.card-apex:hover {
+  border-color: rgba(212, 175, 55, 0.35);
+  box-shadow: 0 20px 40px -12px rgba(212, 175, 55, 0.08);
+}
+
+.card-apex-elevated {
+  background: #161B26;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.7);
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #FDE68A 0%, #E5B842 50%, #D4AF37 100%);
+  color: #0B0E14;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 20px -4px rgba(229, 184, 66, 0.35);
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, #FFF0C2 0%, #F0C453 50%, #E5B842 100%);
+  box-shadow: 0 6px 25px -4px rgba(229, 184, 66, 0.5);
+  transform: translateY(-1px);
+}
+
+.btn-gold:active {
+  transform: scale(0.98);
+}
+
+.btn-charcoal {
+  background: #161B26;
+  color: #F5F5F7;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.btn-charcoal:hover {
+  background: #1C2333;
+  border-color: rgba(212, 175, 55, 0.4);
+  color: #FFFFFF;
+}
+
+.glow-gold {
+  box-shadow: 0 0 30px -5px rgba(229, 184, 66, 0.25);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF0C2 0%, #F5B838 50%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
