@@ -9,12 +9,11 @@ export interface AuthRequest extends Request {
   user?: {
     id: string
     email?: string
-    phone?: string
     username: string
   }
 }
 
-export function generateToken(payload: { id: string; email?: string; phone?: string; username: string }): string {
+export function generateToken(payload: { id: string; email?: string; username: string }): string {
   return jwt.sign(payload, JWT_SECRET, { expiresIn: '7d' })
 }
 
@@ -39,12 +38,11 @@ export function authenticateJWT(req: AuthRequest, res: Response, next: NextFunct
     const decoded = jwt.verify(token, JWT_SECRET) as {
       id: string
       email?: string
-      phone?: string
       username: string
     }
 
     // Verify user exists in database
-    const user = db.prepare('SELECT id, email, phone, username FROM users WHERE id = ?').get(decoded.id)
+    const user = db.prepare('SELECT id, email, username FROM users WHERE id = ?').get(decoded.id)
     if (!user) {
       return res.status(401).json({ error: 'User not found or session revoked' })
     }
